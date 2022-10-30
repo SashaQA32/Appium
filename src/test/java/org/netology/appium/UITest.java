@@ -28,7 +28,8 @@ public class UITest {
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
         desiredCapabilities.setCapability("platformName", "Android");
         desiredCapabilities.setCapability("appium:deviceName", "SomeOne");
-        desiredCapabilities.setCapability("appium:app", "C:\\Users\\1\\Desktop\\QA\\Netology\\Presentation\\MobileTesting\\Manual\\Tasks\\24Appium\\2.4 Appium\\calculator-appium-tests\\apk\\app-debug.apk");
+        desiredCapabilities.setCapability("appium:appPackage", "ru.netology.testing.uiautomator");
+        desiredCapabilities.setCapability("appium:appActivity", "ru.netology.testing.uiautomator.MainActivity");
         desiredCapabilities.setCapability("appium:ensureWebviewsHavePages", true);
         desiredCapabilities.setCapability("appium:nativeWebScreenshot", true);
         desiredCapabilities.setCapability("appium:newCommandTimeout", 3600);
